@@ -1,0 +1,447 @@
+/* Estilos globales para la aplicación de Estudiantes */
+:root{
+    --bg:#f6f8fa;
+    --card:#ffffff;
+    --primary:#DC2626;
+    --accent:#3B82F6;
+    --danger:#991B1B;
+    --muted:#6b7280;
+    --radius:8px;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background:var(--bg);
+    color:#111827;
+    margin:0;
+    padding:20px;
+}
+.container{
+    max-width:900px;
+    margin:0 auto;
+    background:var(--card);
+    padding:20px;
+    border-radius:var(--radius);
+    box-shadow:0 2px 8px rgba(16,24,40,0.06);
+}
+h1{margin-top:0}
+a.button, button{
+    display:inline-block;
+    background:var(--primary);
+    color:white;
+    padding:8px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+}
+a.button.secondary{
+    background:transparent;
+    color:var(--primary);
+    border:1px solid var(--primary);
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:12px;
+}
+th, td{
+    text-align:left;
+    padding:10px 8px;
+    border-bottom:1px solid #e6e9ee;
+}
+thead th{
+    background:linear-gradient(90deg, #fafafa, #fff);
+    font-weight:600;
+}
+.actions a{margin-right:8px}
+form div{margin-bottom:10px}
+label{display:block;margin-bottom:4px;color:var(--muted)}
+input[type="text"], input[type="email"], select{
+    width:100%;
+    padding:8px 10px;
+    border:1px solid #d1d5db;
+    border-radius:6px;
+    box-sizing:border-box;
+}
+.error{color:var(--danger);font-size:0.9em}
+.confirm-box{padding:16px;background:#fff9f9;border:1px solid #fee2e2;border-radius:6px}
+.footer{margin-top:16px;text-align:right}
+
+/* Estilos para el Login y Registro */
+.login-page {
+    background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 380px;
+}
+
+.login-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3);
+    padding: 35px;
+    border: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.login-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin: 0 0 25px 0;
+}
+
+.login-form {
+    margin: 15px 0;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #8B5CF6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+.btn-danger {
+    background: #d32f2f;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c62828;
+}
+
+.alert {
+    padding: 10px 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.alert-error {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.alert-success {
+    background: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.error-text {
+    color: #d32f2f;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
+}
+
+.login-footer p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+}
+
+.link {
+    color: #8B5CF6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #7C3AED;
+    text-decoration: underline;
+}
+
+/* Estilos para el Dashboard */
+.dashboard-page,
+.panel-page {
+    background: #f3f6fb;
+    min-height: 100vh;
+    margin: 0;
+    padding: 32px 20px;
+}
+
+.dashboard-shell,
+.panel-shell {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dashboard-topbar,
+.panel-header,
+.panel-card {
+    background: #ffffff;
+    border: 1px solid #e8edf5;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.dashboard-topbar,
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 28px;
+}
+
+.section-label {
+    margin: 0 0 6px 0;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.dashboard-topbar h1,
+.panel-header h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 30px;
+}
+
+.dashboard-subtitle,
+.panel-subtitle {
+    margin: 8px 0 0 0;
+    color: #64748b;
+}
+
+.user-chip {
+    background: #fee2e2;
+    color: #991B1B;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.dashboard-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin: 22px 0;
+}
+
+.feature-card {
+    background: #ffffff;
+    border: 1px solid #e8edf5;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    font-size: 26px;
+    background: #eef2ff;
+}
+
+.feature-card h2,
+.feature-card h3 {
+    margin: 0 0 10px 0;
+    color: #0f172a;
+}
+
+.feature-card p {
+    margin: 0 0 16px 0;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.card-admin .feature-icon { background: #eef2ff; }
+.card-user .feature-icon { background: #fee2e2; }
+.card-cursos .feature-icon { background: #dbeafe; }
+.card-estudiantes .feature-icon { background: #fff7ed; }
+
+.card-admin { border-top: 4px solid #4f46e5; }
+.card-user { border-top: 4px solid #DC2626; }
+.card-cursos { border-top: 4px solid #3B82F6; }
+.card-estudiantes { border-top: 4px solid #f97316; }
+
+.user-access {
+    display: inline-block;
+    background: #fee2e2;
+    color: #991B1B;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.dashboard-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.logout-form {
+    display: inline-block;
+}
+
+.panel-header {
+    margin-bottom: 18px;
+}
+
+.panel-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.btn-secondary:hover {
+    background: #cbd5e1;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 18px 0;
+}
+
+.summary-card {
+    background: #ffffff;
+    border: 1px solid #e8edf5;
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.summary-card span {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.summary-card strong {
+    color: #0f172a;
+    font-size: 24px;
+}
+
+.panel-card {
+    padding: 18px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-responsive table {
+    margin-top: 0;
+}
+
+.role-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #fee2e2;
+    color: #991B1B;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.empty-state {
+    text-align: center;
+    color: #64748b;
+    padding: 20px 8px;
+}
+
+@media (max-width: 720px) {
+    .dashboard-topbar,
+    .panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-footer {
+        justify-content: stretch;
+    }
+
+    .dashboard-footer .btn,
+    .panel-actions .btn {
+        width: 100%;
+    }
+}
+
+/* Estilos para barras de herramientas */
+.toolbar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.toolbar .button {
+    margin-bottom: 0;
+}
